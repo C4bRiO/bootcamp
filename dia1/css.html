@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS TEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      #contenedor{
+        width:60%;
+        margin:0 auto;
+      }
+
+
+        body{
+          background-color: #bbb;
+        }
+        p{
+          background-color: rgb(64,128,256);
+          color: #fff;
+          padding: 10px;
+          /*border: 1px solid #aaa;*/
+          margin:0;
+        }
+
+        .parrafos-pares{
+          background-color: rgb(0,8,64);
+          color: #fff;
+        }
+
+        #primer-parrafo{
+          background-color: orange;
+          color: #fff;
+        }
+
+
+        #tercer-parrafo{
+          background-color: green;
+          color: #fff;
+        }
+
+        @media screen and (max-width:300px) {
+          #contenedor{
+              width:100%;
+            }
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="contenedor">
+      <p id="primer-parrafo">Primer Parrafo </p>
+      <p class="parrafos-pares">Segundo Parrafo</p>
+      <p id=tercer-parrafo>Tercer Parrafo </p>
+      <p class="parrafos-pares">Cuarto Parrafo </p>
+      <p>Quinto Parrafo </p>
+    </div>
+
+  </body>
+</html>
