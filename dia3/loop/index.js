@@ -28,3 +28,30 @@ for (x in person){
   //txt +=  person[x] + " ";
   console.log(person[x]);
 }
+
+
+var posts = [
+  {
+    titulo:"Programacion en JavaScript",
+    texto: "Texto 1 sobre el titulo",
+  },
+  {
+    titulo:"Introducción a AngularJS",
+    texto: "Texto dos sobre el titulo",
+  },
+  {
+    titulo:"API REST DE 0 A 48",
+    texto: "Texto 2 sobre el titulo",
+  }
+];
+
+
+
+posts.map(function(post){
+  var titulo = post.titulo;
+  var texto = post.texto;
+  console.log(titulo);
+  console.log(texto);
+  console.log(post);
+});
+console.log("#####################################");
