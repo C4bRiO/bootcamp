@@ -1,18 +1,12 @@
 function enviarDatos(){
-  var nombre = document.getElementById("nombre").value;
+  var empresa = document.getElementById("empresa").value;
 
   var descripcion = document.getElementById("descripcion").value;
 
   var direccion = document.getElementById("direccion").value;
 
+  var ciudad = document.getElementById("ciudad").value;
 
-  alert(nombre+" "+descripcion+" "+direccion);
+  alert(empresa+" "+descripcion+" "+direccion+" "+ciudad);
 
-  /*console.log(nombre);
-
-
-
-
-
-  console.log(document.getElementsByClassName("form-group"));*/
 };

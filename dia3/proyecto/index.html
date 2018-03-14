@@ -23,70 +23,62 @@
             <li>
               <a href="#">Mi Perfil</a>
             </li>
-
 			      <li>
-              <a href="#">Configuraciones</a>
-            </li>
-
-            <li>
-              <a href="#">Salir</a>
+              <a href="#">Cerrar Sesión</a>
             </li>
           </ul>
           <div class="navbar-default sidebar" role="navigation">
             <ul class="nav">
               <li>
-                <a href="#">Mi Perfil</a>
+                <a href="#">Dashboard</a>
               </li>
-
               <li>
-                <a href="#">Configuraciones</a>
-              </li>
-
-              <li>
-                <a href="#">Salir</a>
+                <a href="#">Eventos</a>
               </li>
             </ul>
           </div>
         </nav>
+
         <main id="page-wrapper">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="page-header">Dashboard</h1>
+              <h1 class="page-header">Registro de Patrocinadores</h1>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
               <div class="panel panel-default">
                 <div class="panel-heading">
-                  A través de este formulario se crea el evento.
+                  Formulario de registro de patrocinadores
                 </div>
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-md-12">
                         <form id="evento">
                           <div class="form-group">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" value="" id="nombre">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" class="form-control" name="empresa" value="" id="empresa" autocomplete="organization">
                             <br>
                           </div>
                           <div class="form-group">
-                            <label for="nombre">Descripción</label>
-                            <input type="text" class="form-control" name="descripcion" value="" id="descripcion">
+                            <label for="descripcion">Descripción</label>
+                            <input type="text" class="form-control" name="descripcion" value="" id="descripcion"  autocomplete="description">
                             <br>
 
                           </div>
                           <div class="form-group">
-                            <label for="nombre">Dirección</label>
-                            <input type="text" class="form-control" name="direccion" value="" id="direccion">
+                            <label for="direccion">Dirección</label>
+                            <input type="text" class="form-control" name="direccion" value="" id="direccion" autocomplete="address">
                             <br>
                           </div>
                           <div class="form-group">
-                          <select class="form-control" id="ciudad" name="ciudad">
-                            <option >CDE</option>
-                            <option >New York</option>
-                            <option >Sidney</option>
-                            <option>Asuncion</option>
-                          </select>
+                            <label for="ciudad">Ciudad</label>
+                            <select class="form-control" id="ciudad" name="ciudad" >
+                              <option>Ciudad del Este</option>
+                              <option>New York       </option>
+                              <option>Sidney         </option>
+                              <option>Asunción       </option>
+                            </select>
                           </div>
                           <button type="button" class="btn btn-success" onclick="enviarDatos()">Enviar</button>
                         </form>
@@ -101,5 +93,4 @@
       </div>
       <script src="./js/index.js"></script>
   </body>
-
 </html>
