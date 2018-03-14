@@ -14,7 +14,7 @@
   </head>
   <body>
       <div id="wrapper">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">GDG CDE</a>
           </div>
@@ -23,6 +23,8 @@
             <li>
               <a href="#">Mi Perfil</a>
             </li>
+
+			      <li>
               <a href="#">Configuraciones</a>
             </li>
 
@@ -30,7 +32,7 @@
               <a href="#">Salir</a>
             </li>
           </ul>
-          <div class="navbar navbar-default sidebar" role="navigation">
+          <div class="navbar-default sidebar" role="navigation">
             <ul class="nav">
               <li>
                 <a href="#">Mi Perfil</a>
@@ -46,8 +48,6 @@
             </ul>
           </div>
         </nav>
-
-
         <main id="page-wrapper">
           <div class="row">
             <div class="col-md-12">
@@ -63,7 +63,33 @@
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-md-12">
+                        <form id="evento">
+                          <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" class="form-control" name="nombre" value="" id="nombre">
+                            <br>
+                          </div>
+                          <div class="form-group">
+                            <label for="nombre">Descripción</label>
+                            <input type="text" class="form-control" name="descripcion" value="" id="descripcion">
+                            <br>
 
+                          </div>
+                          <div class="form-group">
+                            <label for="nombre">Dirección</label>
+                            <input type="text" class="form-control" name="direccion" value="" id="direccion">
+                            <br>
+                          </div>
+                          <div class="form-group">
+                          <select class="form-control" id="ciudad" name="ciudad">
+                            <option >CDE</option>
+                            <option >New York</option>
+                            <option >Sidney</option>
+                            <option>Asuncion</option>
+                          </select>
+                          </div>
+                          <button type="button" class="btn btn-success" onclick="enviarDatos()">Enviar</button>
+                        </form>
                     </div>
                   </div>
                 </div>
@@ -73,5 +99,7 @@
           </div>
         </main>
       </div>
+      <script src="./js/index.js"></script>
   </body>
+
 </html>
